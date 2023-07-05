@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+        /* NAVBAR --> */
+        .navbar {
+            height: 42px;
+            background-color: rgb(107, 16, 107);
+            border-radius: 8px;
+            opacity: 0.95;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .items {
+            color: white;
+            padding: 4px 10px;
+            margin: 4px 35px;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+
+        /* Hover effects --> */
+
+        .items:hover {
+            transition: all 100ms ease-in-out;
+            border-bottom: 3px solid yellow;
+            color: rgb(167, 165, 165);
+            cursor: pointer;
+        }
+
+        .navbar img:hover {
+            transition: all 100ms ease-in-out;
+            cursor: pointer;
+        }
+
+        /* NAVBAR --> */
+        header::before {
+            content: "";
+            background: url('/img/books-g2b37dda53_1280.jpg');
+            /* background-size: cover; */
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            opacity: 0.7;
+            z-index: -1;
+            height: 940px;
+            width: 100%;
+        }
+
+        body {
+            /* background-image: url(img/books-g2b37dda53_1280.jpg) ; */
+            height: 915px;
+        }
+
+        .form-group {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            height: 145px;
+            /* border: 0.5px solid black; */
+            text-align: center;
+            /* font-weight:bolder; */
+            position: absolute;
+            left: 370px;
+            bottom: 75px;
+            background: transparent;
+        }
+
+        input {
+            height: 100%;
+            border: 0.4px solid black;
+            font-size: 1.2rem;
+            color: black;
+            text-align: center;
+            padding: 6.5px 2px;
+            margin: 3px;
+            border-radius: 13px;
+            background-color: white;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+        }
+
+        #btn {
+            position: absolute;
+            bottom: 9px;
+            left: 422px;
+            border: 1.6px solid black;
+            border-radius: 8px;
+            background-color: white;
+            color: black;
+            width: 220px;
+            height: 27px;
+            font-size: 1rem;
+            font-weight: 550;
+        }
+
+        .head {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .head h1 {
+            font-family: 'Dancing Script', cursive;
+            color: rgb(12, 171, 192);
+            font-size: 4.2rem;
+            padding: 0px;
+            margin-top: 20px;
+            text-shadow: 5px 5px black;
+
+        }
+
+        .head h3 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            padding: 0px;
+            margin: 0px;
+            font-size: 1.5rem;
+            color: red;
+            background-color: bisque;
+            border: 2px solid black;
+        }
+
+        img {
+            width: 40px;
+            position: fixed;
+            left: 20px;
+        }
+
+        /* Hover effects --> */
+
+        input:hover {
+            background-color: rgb(236, 231, 231);
+        }
+
+        #btn:hover {
+            filter: invert(100%);
+            cursor: pointer;
+        }
+
+        img:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <img src="/img/20230603_184720.png" alt="can't load image">
+            <li class="items">Home</li>
+            <li class="items">Library</li>
+            <li class="items">Recommendations</li>
+            <li class="items">Sign Up</li>
+        </ul>
+    </nav>
+    <header>
+        <div class="head">
+            <h1>Sign up now</h1>
+            <h3>Get daily Books Summaries and Audiobooks for FREE!</h3>
+        </div>
+    </header>
+            <!-- <li class="items"><a href='/'> Home</a></li>
+            <li class="items"><a href='/library'>Library</a></li>
+            <li class="items"><a href='/recom'>Recommendations</a></li>
+            <li class="items"><a href='/signup'>Sign Up</a></li> -->
+    <div class="form-group">
+        <input type="text" name="Name1" placeholder="Enter your first name">
+        <input type="text" name="Name2" placeholder="Enter your last name">
+        <input type="email" name="E-mail" placeholder="Enter your E-mail">
+        <input type="password" name="Password" placeholder="Enter your password">
+    </div>
+    <div>
+        <button id="btn" type="submit">Submit now</button>
+    </div>
+</body>
+
+</html>

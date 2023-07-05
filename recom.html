@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations</title>
+    <style>
+        /* NAVBAR --> */
+        .navbar {
+            height: 42px;
+            background-color: rgb(107, 16, 107);
+            border-radius: 8px;
+            opacity: 0.95;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .items {
+            color: white;
+            padding: 4px 10px;
+            margin: 4px 35px;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+
+        /* Hover effects --> */
+
+        .items:hover {
+            transition: all 100ms ease-in-out;
+            border-bottom: 3px solid yellow;
+            color: rgb(167, 165, 165);
+            cursor: pointer;
+        }
+
+        .navbar img:hover {
+            transition: all 100ms ease-in-out;
+            cursor: pointer;
+        }
+
+        /* NAVBAR --> */
+        ul img {
+            width: 42px;
+            position: fixed;
+            left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <img src="/img/20230603_184720.png" alt="can't load image">
+            <li class="items">Home</li>
+            <li class="items">Library</li>
+            <li class="items">Recommendations</li>
+            <li class="items">Sign Up</li>
+            <!-- <li class="items"><a href='/'> Home</a></li>
+            <li class="items"><a href='/library'>Library</a></li>
+            <li class="items"><a href='/recom'>Recommendations</a></li>
+            <li class="items"><a href='/signup'>Sign Up</a></li> -->
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Here are my Recommendations</h1>
+    </div>
+</body>
+
+</html>

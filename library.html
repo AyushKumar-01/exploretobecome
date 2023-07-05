@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libary</title>
+    <style>
+        /* Logo  --> */
+        ul img {
+            width: 42px;
+            position: fixed;
+            left: 20px;
+        }
+        /* NAVBAR --> */
+        .navbar {
+            height: 42px;
+            background-color: rgb(107, 16, 107);
+            border-radius: 8px;
+            opacity: 0.95;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .items {
+            color: white;
+            padding: 4px 10px;
+            margin: 4px 35px;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+
+        /* NAVBAR --> */
+        /* Hover effects --> */
+
+        .items:hover {
+            transition: all 100ms ease-in-out;
+            border-bottom: 3px solid yellow;
+            color: rgb(167, 165, 165);
+            cursor: pointer;
+        }
+
+        .navbar img:hover {
+            transition: all 100ms ease-in-out;
+            cursor: pointer;
+        }
+
+        .heading {
+            color: white;
+            background-color: black;
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-rows: 150px 150px 150px 150px;
+            grid-template-columns: 140px 140px 140px 140px;
+            column-gap: 100px;
+            row-gap: 65px;
+            position: absolute;
+            left: 150px;
+            padding: 2px;
+        }
+
+        .Books img {
+            height: 145px;
+            width: 120px;
+            border-radius: 2px;
+        }
+
+        .links {
+            color: darkblue;
+            font-size: 14px;
+            margin-top: 0px;
+        }
+
+        .booktitles {
+            font-size: 16px;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <img src="/img/20230603_184720.png" alt="can't load image">
+            <li class="items">Home</li>
+            <li class="items">Library</li>
+            <li class="items">Recommendations</li>
+            <li class="items">Sign Up</li>
+            <!-- <li class="items"><a href='/'> Home</a></li>
+            <li class="items"><a href='/library'>Library</a></li>
+            <li class="items"><a href='/recom'>Recommendations</a></li>
+            <li class="items"><a href='/signup'>Sign Up</a></li> -->
+        </ul>
+    </nav>
+    <header>
+        <h1 class="heading">Over 100+ Books summaries links available &amp;</h1>
+    </header>
+
+ <!-- A Good book is an event in my Life              ->>          ->>       -->   
+
+    <div class="grid">
+        <div class="Books">
+            <img src="/books/alchemist.jpg" alt="">
+            <p class="booktitles">The alchemist</p>
+            <a class="links" href="https://youtu.be/6U6I7mUq6kw" target="_blank">Book summary</a>
+        </div>
+        <div class="Books">
+            <img src="/books/mindset.jpg" alt="">
+            <p class="booktitles">Mindset</p>
+            <a class="links" href="https://youtu.be/JJ0O5sgFqx0" target="_blank">Book summary</a>
+        </div>
+        <div class="Books">
+            <img src="/books/meaning.jpg" alt="">
+            <p class="booktitles">Man's searching for meaning</p>
+            <a class="links" href="https://youtu.be/S1oJkuUuSIw" target="_blank">Book summary</a>
+        </div>
+        <div class="Books">
+            <img src="/books/diary.jpg" alt="">
+            <p class="booktitles">A Diary of a young girl</p>
+            <a class="links" href="https://youtu.be/SX5rPEihi34" target="_blank">Book summary</a>
+        </div>
+        <div class="Books">
+            <img src="/books/subconscious.jpg" alt="">
+            <p class="booktitles">The Power of your subconscious mind</p>
+            <a class="links" href="https://youtu.be/BLEYCyrLpkI" target="_blank">Book summary</a>
+        </div>
+        <div class="Books">
+            <img src="/books/atomic.jpg" alt="">
+            <p class="booktitles">Atomic Habits</p>
+            <a class="links" href="https://youtu.be/7_7lHngK-9Q" target="_blank">Book summary</a>
+        </div>
+        <div class="Books">
+            <img src="/books/psycho.jpg" alt="">
+            <p class="booktitles">The Psychology of money</p>
+            <a class="links" href="https://youtu.be/srmz6Ozia3c" target="_blank">Book summary</a>
+        </div>
+        <div class="Books">
+            <img src="/books/start.jpg" alt="">
+            <p class="booktitles">Start with why</p>
+            <a class="links" href="https://youtu.be/ep7sAtYjm08" target="_blank">Book summary</a>
+        </div>
+        <div class="Books">
+            <img src="/books/million.jpg" alt="">
+            <p class="booktitles">The Millionaire fastlane</p>
+            <a class="links" href="https://youtu.be/1-w2yADtsm4" target="_blank">Book summary</a>
+        </div>
+        <div class="Books">
+            <img src="/books/whocry.jpg" alt="">
+            <p class="booktitles">Who will cry when you die</p>
+            <a class="links" href="https://youtu.be/2I14PNwCXpY" target="_blank">Book summary</a>
+        </div>
+        <div class="Books">
+            <img src="/books/richdad.jpg" alt="">
+            <p class="booktitles">Rich dad poor dad</p>
+            <a class="links" href="https://youtu.be/1-2E0nfpias
+            " target="_blank">Book summary</a>
+        </div>
+        <div class="Books">
+            <img src="/books/sapiens.jpg" alt="">
+            <p class="booktitles">Sapiens</p>
+            <a class="links" href="https://youtu.be/FaW3UiW2e3I" target="_blank">Book summary</a>
+        </div>
+        <div class="Books">
+            <img src="/books/think&grow.jpg" alt="">
+            <p class="booktitles">Think & grow rich</p>
+            <a class="links" href="https://youtu.be/QmfLkBKMQMQ" target="_blank">Book summary</a>
+        </div>
+        <div class="Books">
+            <img src="/books/zero.jpg" alt="">
+            <p class="booktitles">Zero to one</p>
+            <a class="links" href="https://youtu.be/mRn1beQhTpk" target="_blank">Book summary</a>
+        </div>
+        <div class="Books">
+            <img src="/books/compound.jpg" alt="">
+            <p class="booktitles">The compound effect
+                <a class="links" href="https://youtu.be/iJqqbC8Vu3s" target="_blank">Book summary</a>
+        </div>
+        <div class="Books">
+            <img src="/books/monk.jpg" alt="">
+            <p class="booktitles">The Monk who solid his ferrari</p>
+            <a class="links" href="https://youtu.be/vGCpH6oGUP4" target="_blank">Book summary</a>
+        </div>
+        <div class="Books">
+            <img src="/books/brief.jpg" alt="">
+            <p class="booktitles">A brief history of time</p>
+            <a class="links" href="https://youtu.be/GlkNPLZvpCs" target="_blank">Book summary</a>
+        </div>
+        <div class="Books">
+            <img src="/books/titans.jpg" alt="">
+            <p class="booktitles">Tools of titans</p>
+            <a class="links" href="https://youtu.be/7ymKZhuYjoE" target="_blank">Book summary</a>
+        </div>
+        <div class="Books">
+            <img src="/books/eat.jpg" alt="">
+            <p class="booktitles">Eat that frog</p>
+            <a class="links" href="https://youtu.be/qpSYlVmh5tY" target="_blank">Book summary</a>
+        </div>
+        <div class="Books">
+            <img src="/books/looking.jpg" alt="">
+            <p class="booktitles">Looking for alaska</p>
+            <a class="links" href="https://youtu.be/tbRN-XzXSyg" target="_blank">Book summary</a>
+        </div>
+        <!-- <div class="Books">
+            <img src="origin.jpg" alt="">
+            <p class="booktitles">The origin of Species</p>
+            <a class="links" href="https://youtu.be/6U6I7mUq6kw" target="_blank">Book summary</a>
+        </div>
+        <div class="Books">
+            <img src="friends.jpg" alt="">
+            <p class="booktitles">How to win friends & Influence people</p>
+            <a class="links" href="https://youtu.be/6U6I7mUq6kw" target="_blank">Book summary</a>
+        </div>
+        <div class="Books">
+            <img src="splendid.jpg" alt="">
+            <p class="booktitles">A Thousand splendid suns</p>
+            <a class="links" href="https://youtu.be/6U6I7mUq6kw" target="_blank">Book summary</a>
+        </div>
+        <div class="Books">
+            <img src="richest.jpg" alt="">
+            <p class="booktitles">The Richest man of babylon</p>
+            <a class="links" href="https://youtu.be/6U6I7mUq6kw" target="_blank">Book summary</a>
+        </div> -->
+    </div>
+</body>
+
+</html>
