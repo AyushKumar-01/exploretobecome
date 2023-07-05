@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@600&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Lato&family=Notable&family=Ubuntu&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Notable&family=Ubuntu&display=swap");
+      html {
+        scroll-behavior: smooth;
+      }
+
+      header::before {
+        background: url(/img/newhomebg.jpg);
+        background-size: cover;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 575px;
+        opacity: 0.825;
+        z-index: -1;
+        top: 0;
+        left: 0;
+      }
+      body {
+        height: 550px;
+      }
+
+      /* Navbar --> */
+      .navbar {
+        height: 42px;
+        background-color: #5d3fd3;
+        border-radius: 8px;
+        opacity: 0.95;
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+      }
+
+      .items {
+        color: white;
+        padding: 4px 10px;
+        margin: 4px 35px;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1.3rem;
+        font-weight: 400;
+      }
+
+      .navlinks {
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      /* Container section --> */
+      .container1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 45%;
+        margin-top: 10px;
+      }
+
+      .container2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 48%;
+      }
+
+      h1 {
+        color: white;
+      }
+
+      .container1 h1 {
+        margin-top: 80px;
+        text-shadow: 4px 6px 3px rgb(20, 20, 20);
+      }
+
+      .container2 h1 {
+        margin-top: -2px;
+        border-bottom: 3.5px solid yellow;
+      }
+
+      .container2 {
+        font-size: 1.2rem;
+      }
+
+      .caplet {
+        color: yellow;
+        font-size: 3.4rem;
+      }
+
+      /* Home Logo  --> */
+      header img {
+        filter: invert(100%);
+        width: 31px;
+        position: fixed;
+        left: 20px;
+        top: 21px;
+      }
+
+      /* Hover effects --> */
+      .items:hover {
+        transition: all 100ms ease-in-out;
+        border-bottom: 3px solid yellow;
+        cursor: pointer;
+      }
+      .navbar img:hover {
+        transition: all 100ms ease-in-out;
+        cursor: pointer;
+      }
+
+      /* Grid box --> */
+      .grid {
+        display: grid;
+        grid-template-columns: 60px 60px 60px 60px;
+        grid-template-rows: 72px 72px;
+        column-gap: 18px;
+        row-gap: 18px;
+        position: absolute;
+        left: 151px;
+      }
+
+      .Books img {
+        height: 72px;
+        width: 60px;
+        border-radius: 2px;
+      }
+
+      /* Footer --> */
+      .foot {
+        background-color: rgb(31, 30, 30);
+        color: white;
+        position: absolute;
+        padding: 10px;
+        width: 1243px;
+        top: 575px;
+        left: 0px;
+      }
+
+      .footimg {
+        width: 21.5px;
+        float: right;
+        padding: 8px 5px;
+        margin: 4px;
+      }
+      #footlogo {
+        width: 41px;
+        display: inline;
+        margin: 0px;
+        padding: 0px;
+      }
+      #footh3 {
+        display: inline;
+        font-size: 30px;
+        font-family: "teko", sans-serif;
+        margin: 0px;
+        position: absolute;
+        left: 76px;
+        bottom: 12px;
+      }
+      #copyright {
+        width: 30%;
+        margin: 0px;
+        position: absolute;
+        left: 258px;
+        bottom: 25px;
+      }
+      #pipe {
+        position: absolute;
+        font-size: 2.4rem;
+        bottom: -9px;
+        left: -12px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <a href="index.html"><img id="homelogo" src="/icons/home.png" alt="can't load image"/></a>
+          <li class="items"><a href="index.html" class="navlinks">Home</a></li>
+          <li class="items">
+            <a href="library.html" class="navlinks">Library</a>
+          </li>
+          <li class="items">
+            <a href="recom.html" class="navlinks">Recommendations</a>
+          </li>
+          <li class="items">
+            <a href="signup.html" class="navlinks">Sign Up</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container1">
+      <h1>Welcome to</h1>
+    </div>
+    <div class="container2">
+      <h1>
+        <span class="caplet">E</span>xplore <span class="caplet">T</span>o
+        <span class="caplet">B</span>ecome
+      </h1>
+    </div>
+    <div class="grid">
+      <div class="Books"><img src="/books/alchemist.jpg" alt="" /></div>
+      <div class="Books"><img src="/books/subconscious.jpg" alt="" /></div>
+      <div class="Books"><img src="/books/atomic.jpg" alt="" /></div>
+      <div class="Books"><img src="/books/psycho.jpg" alt="" /></div>
+      <div class="Books"><img src="/books/richdad.jpg" alt="" /></div>
+      <div class="Books"><img src="/books/sapiens.jpg" alt="" /></div>
+      <div class="Books"><img src="/books/think&grow.jpg" alt="" /></div>
+      <div class="Books"><img src="/books/monk.jpg" alt="" /></div>
+    </div>
+    <footer>
+      <div class="foot">
+        <img src="/icons/logo.png" alt="" id="footlogo" />
+        <p id="footh3">Ayush Kumar</p>
+        <a href="https://twitter.com/Ayush_kumar_0" target="_blank"
+          ><img src="/icons/twitter.png" alt="" class="footimg"
+        /></a>
+        <a href="https://www.youtube.com/@explore_to_become" target="_blank"
+          ><img src="/icons/yt.png" alt="" class="footimg"
+        /></a>
+        <a href="https://www.instagram.com/iam_ayush3/" target="_blank"
+          ><img src="/icons/insta.png" alt="" class="footimg"
+        /></a>
+        <p id="copyright">
+          <span id="pipe">| </span
+          ><span>Copyright &copy;ExploreToBecome.com</span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
