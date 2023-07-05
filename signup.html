@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato&family=Notable&family=Ubuntu&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Notable&family=Ubuntu&display=swap');
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header::before {
+            content: "";
+            background: url(./img/signupbg.jpg) no-repeat center center/cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            opacity: 0.51;
+            z-index: -1;
+            height: 840px;
+            width: 100%;
+        }
+
+        body {
+            height: 815px;
+        }
+
+        /* NAVBAR --> */
+        .navbar {
+            height: 42px;
+            background-color: #5D3FD3;
+            border-radius: 8px;
+            opacity: 0.95;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .items {
+            color: white;
+            padding: 4px 10px;
+            margin: 4px 35px;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+
+        .navlinks {
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        /* Content --> */
+        .head {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .head h1 {
+            font-family: 'Dancing Script', cursive;
+            color: rgb(12, 171, 192);
+            font-size: 4.2rem;
+            padding: 0px;
+            margin-top: 20px;
+            text-shadow: 5px 5px black;
+        }
+
+        .head h3 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            padding: 0px;
+            margin: 0px;
+            font-size: 1.5rem;
+            color: red;
+            background-color: bisque;
+            border: 2px solid black;
+        }
+
+        /* Home Logo  --> */
+        .navbar img {
+            filter: invert(100%);
+            width: 31px;
+            position: fixed;
+            left: 20px;
+            top: 21px;
+        }
+
+        /* Form --> */
+        .form-group {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+            height: 145px;
+            text-align: center;
+            background: transparent;
+        }
+
+        input {
+            height: 100%;
+            border: 0.4px solid black;
+            font-size: 1.2rem;
+            color: black;
+            text-align: center;
+            padding: 6.5px 2px;
+            margin: 3px;
+            border-radius: 13px;
+            background-color: white;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+        }
+
+        /* Submit button --> */
+        #btn {
+            border: 1.6px solid black;
+            border-radius: 8px;
+            background-color: white;
+            color: black;
+            width: 260px;
+            height: 27px;
+            font-size: 1rem;
+            font-weight: 550;
+        }
+
+        /* Hover effects --> */
+        .items:hover {
+            transition: all 100ms ease-in-out;
+            border-bottom: 3px solid yellow;
+            color: rgb(167, 165, 165);
+            cursor: pointer;
+        }
+
+        .navbar img:hover {
+            transition: all 100ms ease-in-out;
+            cursor: pointer;
+        }
+
+        input:hover {
+            background-color: rgb(236, 231, 231);
+        }
+
+        #btn:hover {
+            filter: invert(100%);
+            cursor: pointer;
+        }
+
+        img:hover {
+            cursor: pointer;
+        }
+
+        /* javascript Event code --> */
+        #jsimg {
+            display: none;
+            position: absolute;
+            width: 215px;
+            left: 425px;
+            top: 235px;
+        }
+
+        #distext {
+            display: none;
+            position: absolute;
+            left: 355px;
+            top: 390px;
+            font-family: 'Ubuntu', sans-serif;
+            border: 2px solid rgb(24, 24, 24);
+            background-color: rgb(227, 223, 223);
+            padding: 8px;
+            border-radius: 12px;
+        }
+        .form-group-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <a href="index.html"><img id="homelogo" src="./icons/home.png" alt="can't load image"></a>
+            <li class="items"><a href="index.html" class="navlinks">Home</a></li>
+            <li class="items"><a href="library.html" class="navlinks">Library</a></li>
+            <li class="items"><a href="recom.html" class="navlinks">Recommendations</a></li>
+            <li class="items"><a href="signup.html" class="navlinks">Sign Up</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="head">
+            <h1>Sign up now</h1>
+            <h3>Get daily Books Summaries and Audiobooks for FREE!</h3>
+        </div>
+    </header>
+    <div class="form-group-container">
+        <div class="form-group" id="form">
+            <input type="text" name="Name1" placeholder="Enter your first name">
+            <input type="text" name="Name2" placeholder="Enter your last name">
+            <input type="email" name="E-mail" placeholder="Enter your E-mail">
+            <input type="password" name="Password" placeholder="Enter your password">
+        </div>
+    </div>
+    <div id="jsdisplay">
+        <img id="jsimg" src="./img/tick2.webp">
+        <h2 id="distext">Thanks for Submitting the form.</h2>
+    </div>
+    <div class="btn-container">
+        <button id="btn" type="submit">Submit now</button>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

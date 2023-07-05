@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Libary</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@600&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Lato&family=Notable&family=Ubuntu&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Cairo+Play:wght@700&family=Lato&family=Notable&family=Ubuntu&display=swap");
+      /* Home Logo  --> */
+      .navbar img {
+        filter: invert(100%);
+        width: 31px;
+        position: fixed;
+        left: 20px;
+        top: 21px;
+      }
+
+      /* NAVBAR --> */
+      .navbar {
+        height: 42px;
+        background-color: #5d3fd3;
+        border-radius: 8px;
+        opacity: 0.95;
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+      }
+
+      .items {
+        color: white;
+        padding: 4px 10px;
+        margin: 4px 35px;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1.3rem;
+        font-weight: 400;
+      }
+
+      .navlinks {
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      /* Hover effects --> */
+      .items:hover {
+        transition: all 100ms ease-in-out;
+        border-bottom: 3px solid yellow;
+        color: rgb(167, 165, 165);
+        cursor: pointer;
+      }
+
+      .navbar img:hover {
+        transition: all 100ms ease-in-out;
+        cursor: pointer;
+      }
+
+      .cards:hover {
+        transform: scale(1.07);
+        background-color: rgb(231, 227, 227);
+        box-shadow: 2px 2px 5px 5px rgb(129, 127, 127);
+        transition: all 0.25s ease-in-out;
+      }
+      .heading {
+        text-align: center;
+        border-radius: 20px;
+        width: 80%;
+        display: block;
+        margin: 3.69px auto;
+        padding: 6px;
+        font-family: "Cairo play", sans-serif;
+      }
+
+      body {
+        background: url(./img/whitelib.jpg);
+      }
+
+      /* GRID --> */
+      .grid {
+        display: grid;
+        grid-template-rows: 165px 165px 165px 165px;
+        grid-template-columns: 152px 152px 152px 152px;
+        column-gap: 120px;
+        row-gap: 130px;
+        padding: 5px;
+        justify-content: center;
+      }
+      .cards {
+        border: 0.21px solid black;
+        padding: 12px;
+        width: 195px;
+        height: 235px;
+        background-color: rgb(255, 246, 246);
+        transition: transform 0.25s;
+      }
+      .cards img {
+        height: 141px;
+        width: 116px;
+        border-radius: 3px;
+        position: relative;
+        left: 37px;
+        border: 1.1px solid black;
+      }
+
+      .links {
+        color: white;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: -31px;
+        border: 1px solid black;
+        background-color: #ff9800;
+        padding: 2.6px;
+        border-radius: 1.5px;
+        text-decoration: none;
+      }
+
+      .booktitles {
+        font-size: 15.4px;
+        margin: 0px;
+        text-align: center;
+        position: relative;
+        bottom: -20px;
+        color: black;
+        font-family: "lato", sans-serif;
+      }
+
+      /* Category divisions --> */
+      .category-1 {
+        color: #0717ff;
+        text-align: center;
+        font-size: 1.2rem;
+        letter-spacing: 7px;
+        font-family: "Cairo play", sans-serif;
+      }
+
+      .category-1 h2{
+        margin-top: 0px;
+      }
+      #category-2{
+        color: #0717ff;
+        text-align: center;
+        font-size: 1.2rem;
+        letter-spacing: 7px;
+        font-family: "Cairo play", sans-serif;
+      }
+      #selfhelpimg {
+        width: 121px;
+        margin-top: 0px;
+      }
+      #moneyimg {
+        width: 121px;
+      }
+      .slidebtn{
+        width: 50px;
+        padding: 6px;
+        cursor: pointer;
+        background-color: #634cbf;
+        border: none;
+      }
+      .slidebtn:hover{
+        background-color: #7862d0;
+        transform: scale(1.08);
+        transition: all 0.15s ease-in-out;
+        border-radius: 5px;
+      }
+      .arrows{
+        color: yellow;
+        font-size: 2.2rem;
+        font-weight: bold;
+      }
+      .selftitle{
+        padding: 45px;
+      }
+      .finance-images{
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <ul>
+        <a href="index.html"
+          ><img id="homelogo" src="./icons/home.png" alt="can't load image"
+        /></a>
+        <li class="items"><a href="index.html" class="navlinks">Home</a></li>
+        <li class="items">
+          <a href="library.html" class="navlinks">Library</a>
+        </li>
+        <li class="items">
+          <a href="recom.html" class="navlinks">Recommendations</a>
+        </li>
+        <li class="items">
+          <a href="signup.html" class="navlinks">Sign Up</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <h1 class="heading">Over 100+ Books summaries links available</h1>
+    </header>
+
+    <div class="category-1">
+      <img id="selfhelpimg" src="./icons/selfpng.png" alt="." />
+      <h2><button class="slidebtn"><span class="arrows"><</span></button><span class="selftitle">Self Help</span><button class="slidebtn"><span class="arrows">></span></button></h2>
+    </div>
+
+    <div class="grid">
+      <div class="bookcontainer">
+        <div class="cards">
+          <img src="./books/alchemist.jpg" alt="" />
+          <p class="booktitles">The alchemist</p>
+          <a class="links" href="https://youtu.be/6U6I7mUq6kw" target="_blank">Book summary</a>
+        </div>
+      </div>
+
+      <div class="bookcontainer">
+        <div class="cards">
+          <img src="./books/subconscious.jpg" alt="" />
+          <p class="booktitles">Power of subconscious mind</p>
+          <a class="links" href="https://youtu.be/BLEYCyrLpkI" target="_blank">Book summary</a>
+        </div>
+      </div>
+
+      
+      <div class="bookcontainer">
+        <div class="cards">
+            <img src="./books/meaning.jpg" alt="" />
+            <p class="booktitles">Man's search for meaning</p>
+            <a class="links" href="https://youtu.be/S1oJkuUuSIw" target="_blank">Book summary</a>
+        </div>
+      </div>
+
+      <div class="bookcontainer">
+        <div class="cards">
+            <img src="./books/monk.jpg" alt="" />
+            <p class="booktitles">Monk who sold his ferrari</p>
+            <a class="links" href="https://youtu.be/vGCpH6oGUP4" target="_blank">Book summary</a>
+        </div>
+      </div>
+
+      <div class="bookcontainer">
+        <div class="cards">
+          <img src="./books/atomic.jpg" alt="" />
+          <p class="booktitles">Atomic Habits</p>
+          <a class="links" href="https://youtu.be/7_7lHngK-9Q" target="_blank">Book summary</a>
+        </div>
+      </div>
+    
+      <div class="bookcontainer">
+        <div class="cards">
+            <img src="./books/whocry.jpg" alt="" />
+            <p class="booktitles">Who will cry when you die</p>
+            <a class="links" href="https://youtu.be/2I14PNwCXpY" target="_blank">Book summary</a>
+        </div>
+      </div>
+    
+      <div class="bookcontainer">
+        <div class="cards">
+            <img src="./books/compound.jpg" alt="" />
+            <p class="booktitles">The compound effect</p>
+            <a class="links" href="https://youtu.be/iJqqbC8Vu3s" target="_blank">Book summary</a>
+        </div>
+      </div>
+
+      <div class="bookcontainer">
+        <div class="cards">
+            <img src="./books/courage.jpg" alt="" />
+            <p class="booktitles">The Courage to be Disliked</p>
+            <a class="links" href="https://youtu.be/iJqqbC8Vu3s" target="_blank">Book summary</a>
+        </div>
+      </div>
+
+      <div class="bookcontainer">
+        <div class="cards">
+            <img src="./books/ikigai.jpg" alt="" />
+            <p class="booktitles">Ikigai</p>
+            <a class="links" href="https://youtu.be/iJqqbC8Vu3s" target="_blank">Book summary</a>
+        </div>
+      </div>
+
+      <div class="bookcontainer">
+        <div class="cards">
+            <img src="./books/mycheese.jpg" alt="" />
+            <p class="booktitles">Who moved my cheese?</p>
+            <a class="links" href="https://youtu.be/iJqqbC8Vu3s" target="_blank">Book summary</a>
+        </div>
+      </div>
+
+      <div class="bookcontainer">
+        <div class="cards">
+            <img src="./books/thesecret.jpg" alt="" />
+            <p class="booktitles">The Secret</p>
+            <a class="links" href="https://youtu.be/iJqqbC8Vu3s" target="_blank">Book summary</a>
+        </div>
+      </div>
+
+      <div class="bookcontainer">
+        <div class="cards">
+            <img src="./books/titans.jpg" alt="" />
+            <p class="booktitles">Tools of Titans</p>
+            <a class="links" href="https://youtu.be/iJqqbC8Vu3s" target="_blank">Book summary</a>
+        </div>
+      </div>
+
+      <div class="bookcontainer">
+        <div class="cards">
+            <img src="./books/mindset.jpg" alt="" />
+            <p class="booktitles">Mindset</p>
+            <a class="links" href="https://youtu.be/JJ0O5sgFqx0" target="_blank">Book summary</a>
+        </div>
+      </div>
+
+      <div class="bookcontainer">
+        <div class="cards">
+            <img src="./books/4agrements.jpg" alt="" />
+            <p class="booktitles">The four agreements</p>
+            <a class="links" href="https://youtu.be/iJqqbC8Vu3s" target="_blank">Book summary</a>
+        </div>
+      </div>
+
+      <div class="bookcontainer">
+        <div class="cards">
+            <img src="./books/lawsnature.jpg" alt="" />
+            <p class="booktitles">Laws of Human Nature</p>
+            <a class="links" href="https://youtu.be/iJqqbC8Vu3s" target="_blank">Book summary</a>
+        </div>
+      </div>
+
+      <div class="bookcontainer">
+        <div class="cards">
+            <img src="./books/48laws.png" alt="" />
+            <p class="booktitles">48 Laws of Power</p>
+            <a class="links" href="https://youtu.be/iJqqbC8Vu3s" target="_blank">Book summary</a>
+        </div>
+      </div>
+
+      
+      <div class="finance-images">
+        <div class="cards">
+          <img src="./books/start.jpg" alt="" />
+          <p class="booktitles">Start with why</p>
+          <a class="links" href="https://youtu.be/ep7sAtYjm08" target="_blank">Book summary</a>
+        </div>
+      </div>
+
+      <div class="finance-images">
+        <div class="cards">
+            <img src="./books/psycho.jpg" alt="" />
+            <p class="booktitles">The Psychology of money</p>
+            <a class="links" href="https://youtu.be/srmz6Ozia3c" target="_blank">Book summary</a>
+        </div>
+      </div>
+    
+      <div class="finance-images">
+        <div class="cards">
+            <img src="./books/million.jpg" alt="" />
+            <p class="booktitles">The Millionaire fastlane</p>
+            <a class="links" href="https://youtu.be/1-w2yADtsm4" target="_blank">Book summary</a>
+        </div>
+      </div>
+    
+    
+      <div class="finance-images">
+        <div class="cards">
+            <img src="./books/richdad.jpg" alt="" />
+            <p class="booktitles">Rich dad poor dad</p>
+            <a class="links"href="https://youtu.be/1-2E0nfpias"target="_blank">Book summary</a>
+        </div>
+      </div>
+
+      <!-- <div class="bookcontainer">
+        <div class="cards">
+            <img src="./books/sapiens.jpg" alt="" />
+            <p class="booktitles">Sapiens</p>
+            <a class="links" href="https://youtu.be/FaW3UiW2e3I" target="_blank">Book summary</a>
+        </div>
+      </div> -->
+
+      <!-- <div class="bookcontainer">
+        <div class="cards">
+            <img src="./books/diary.jpg" alt="" />
+            <p class="booktitles">A Diary of a young girl</p>
+            <a class="links" href="https://youtu.be/SX5rPEihi34" target="_blank">Book summary</a>
+        </div>
+      </div>
+
+      <div class="bookcontainer">
+        <div class="cards">
+            <img src="./books/think&grow.jpg" alt="" />
+            <p class="booktitles">Think & grow rich</p>
+            <a class="links" href="https://youtu.be/QmfLkBKMQMQ" target="_blank">Book summary</a>
+        </div>
+      </div>
+
+      <div class="bookcontainer">
+        <div class="cards">
+            <img src="./books/zero.jpg" alt="" />
+            <p class="booktitles">Zero to one</p>
+            <a class="links" href="https://youtu.be/mRn1beQhTpk" target="_blank">Book summary</a>
+        </div>
+      </div>
+
+      <div class="bookcontainer">
+        <div class="cards">
+            <img src="./books/brief.jpg" alt="" />
+            <p class="booktitles">A brief history of time</p>
+            <a class="links" href="https://youtu.be/GlkNPLZvpCs" target="_blank">Book summary</a>
+        </div>
+      </div>
+
+      <div class="bookcontainer">
+        <div class="cards">
+            <img src="./books/titans.jpg" alt="" />
+            <p class="booktitles">Tools of titans</p>
+            <a class="links" href="https://youtu.be/7ymKZhuYjoE" target="_blank">Book summary</a>
+        </div>
+      </div>
+
+      <div class="bookcontainer">
+        <div class="cards">
+            <img src="./books/eat.jpg" alt="" />
+            <p class="booktitles">Eat that frog</p>
+            <a class="links" href="https://youtu.be/qpSYlVmh5tY" target="_blank">Book summary</a>
+        </div>
+      </div>
+
+      <div class="bookcontainer">
+        <div class="cards">
+            <img src="./books/looking.jpg" alt="" />
+            <p class="booktitles">Looking for alaska</p>
+            <a class="links" href="https://youtu.be/tbRN-XzXSyg" target="_blank">Book summary</a>
+        </div>
+      </div> -->
+</div>
+  </body>
+</html>

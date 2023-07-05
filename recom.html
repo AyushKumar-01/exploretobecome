@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato&family=Notable&family=Ubuntu&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Notable&family=Ubuntu&display=swap');
+        /* NAVBAR --> */
+        .navbar {
+            height: 42px;
+            background-color: #5D3FD3;
+            border-radius: 8px;
+            opacity: 0.95;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .items {
+            color: white;
+            padding: 4px 10px;
+            margin: 4px 35px;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+        body{
+            background: url(./img/underconst.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .navlinks {
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        /* Hover effects --> */
+
+        .items:hover {
+            transition: all 100ms ease-in-out;
+            border-bottom: 3px solid yellow;
+            color: rgb(167, 165, 165);
+            cursor: pointer;
+        }
+
+        .navbar img:hover {
+            transition: all 100ms ease-in-out;
+            cursor: pointer;
+        }
+
+        /* Home Logo  --> */
+        .navbar img {
+            filter: invert(100%);
+            width: 31px;
+            position: fixed;
+            left: 20px;
+            top: 21px;
+        }
+        .container h1{
+            color: white;
+            background-color: rgb(255, 102, 0);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <a href="index.html"><img id="homelogo" src="./icons/home.png" alt="can't load image"></a>
+            <li class="items"><a href="index.html" class="navlinks">Home</a></li>
+            <li class="items"><a href="library.html" class="navlinks">Library</a></li>
+            <li class="items"><a href="recom.html" class="navlinks">Recommendations</a></li>
+            <li class="items"><a href="signup.html" class="navlinks">Sign Up</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Here are my Recommendations</h1>
+    </div>
+</body>
+
+</html>
